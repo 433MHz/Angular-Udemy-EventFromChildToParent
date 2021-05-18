@@ -1,3 +1,4 @@
-<app-first (dataToOutput) = "getDataFromOutput($event)"></app-first>
+Type something here to send it from parent (this) to child component <br>
+<input type="text" [(ngModel)] = "dataFromInput">
 
-{{data}}
+<app-slave [toSlave] = "dataFromInput"></app-slave>

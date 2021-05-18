@@ -8,9 +8,6 @@ import { Component } from '@angular/core';
 export class AppComponent {
   title = 'practiseDataBindingBetweenComponents';
 
-  data: string;
+  dataFromInput: string;
 
-  getDataFromOutput(event:{dataFromInput: string}){
-    this.data= event.dataFromInput;
-  }
 }
