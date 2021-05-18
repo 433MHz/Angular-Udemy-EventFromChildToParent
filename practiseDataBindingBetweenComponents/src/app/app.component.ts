@@ -9,5 +9,9 @@ export class AppComponent {
   title = 'practiseDataBindingBetweenComponents';
 
   dataFromInput: string;
+  dataFromChildOutput: string;
 
+  getDataFromChildOutput(data: string){
+    this.dataFromChildOutput = data;
+  }
 }

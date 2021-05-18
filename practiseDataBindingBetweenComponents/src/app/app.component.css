@@ -1,0 +1,18 @@
+.containerLeft{
+    border: solid 1px gray ;
+    width: 50vw;
+    height: 30vh;
+    
+}
+
+.containerRight{
+    border: solid 1px gray;
+    width: 50vw;
+    height: 30vh;
+}
+
+.container{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+}

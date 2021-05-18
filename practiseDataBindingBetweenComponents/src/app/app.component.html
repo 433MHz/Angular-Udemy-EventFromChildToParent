@@ -1,4 +1,19 @@
-Type something here to send it from parent (this) to child component <br>
-<input type="text" [(ngModel)] = "dataFromInput">
+<div class="container">
 
-<app-slave [toSlave] = "dataFromInput"></app-slave>
+    <div class="containerLeft">
+        <h1>Here is exaple of data parsing from parent to child</h1>
+
+    <p>Type something here to send it from parent (this) to child (bottom)</p>
+    <input type="text" [(ngModel)] = "dataFromInput">
+
+    <app-slave [toSlave] = "dataFromInput"></app-slave>
+    </div>
+
+
+    <div class="containerRight">
+        <h1>Here is example of data parsing from child to parent</h1>
+        <app-slave-second (dataForParent) = "getDataFromChildOutput($event)"></app-slave-second>
+        <p>On the bottom is data from child</p>
+        {{dataFromChildOutput}}
+    </div>
+</div>
