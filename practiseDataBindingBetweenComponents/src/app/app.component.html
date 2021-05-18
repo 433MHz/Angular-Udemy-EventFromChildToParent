@@ -12,7 +12,7 @@
 
     <div class="containerRight">
         <h1>Here is example of data parsing from child to parent</h1>
-        <app-slave-second (dataForParent) = "getDataFromChildOutput($event)"></app-slave-second>
+        <app-slave-second (forParent) = "getDataFromChildOutput($event)"></app-slave-second>
         <p>On the bottom is data from child</p>
         {{dataFromChildOutput}}
     </div>

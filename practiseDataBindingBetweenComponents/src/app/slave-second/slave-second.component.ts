@@ -14,7 +14,7 @@ export class SlaveSecondComponent implements OnInit {
 
   dataFromInput: string;
 
-  @Output() dataForParent = new EventEmitter<string>();
+  @Output('forParent') dataForParent = new EventEmitter<string>();
 
   setEventEmmiter(){
     this.dataForParent.emit(this.dataFromInput);
